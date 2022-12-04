@@ -16,8 +16,8 @@ export const ToggleSiteTheme = () => {
       ? Cookies.set("SiteTheme", "light", { expires: 30 })
       : Cookies.set("SiteTheme", "dark", { expires: 30 });
 
-    console.log(Cookies.get("SiteTheme"));
     setSiteTheme(Cookies.get("SiteTheme"));
+    console.log(siteTheme);
   };
 
   return (
